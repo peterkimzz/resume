@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="divider"></div>
+    <div class="divider"/>
     <vue-definition
       sub-title="Last updated"
       title="마지막 수정일">
@@ -23,10 +23,10 @@ export default {
   background-color: $oc-gray-3;
   width: 100%;
   height: 1px;
+  margin-bottom: 20px;
 }
 
 footer {
-  padding-top: 10px;
   padding-bottom: 20px;
 }
 </style>

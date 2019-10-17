@@ -25,5 +25,9 @@ export default {
 img {
   border-radius: 40%;
   width: 100%;
+  height: 100%;
+  padding: 5px;
+  box-shadow: 1px 1px 10px $oc-gray-4;
+  object-fit: contain;
 }
 </style>

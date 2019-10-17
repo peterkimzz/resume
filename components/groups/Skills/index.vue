@@ -46,7 +46,10 @@ export default {
         'SEO',
         'Nginx',
         'ElasticSearch',
-        'Swift3'
+        'Swift',
+        'Objective-C',
+        'React Native',
+        'Firebase'
       ]
     }
   }
