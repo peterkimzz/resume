@@ -1,10 +1,9 @@
 <template>
   <div id="default__layout">
-
-    <div>
+    <main>
       <nuxt />
-    </div>
-    <vue-footer/>
+    </main>
+    <!-- <vue-footer/> -->
   </div>
 </template>
 
@@ -16,3 +15,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+main {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+</style>

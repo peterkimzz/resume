@@ -10,5 +10,6 @@
 .lr-padding {
   padding: 0 20px;
   margin: 0 auto;
+  max-width: 800px;
 }
 </style>

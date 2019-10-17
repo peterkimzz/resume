@@ -22,12 +22,17 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        src: 'https://use.fontawesome.com/releases/v5.11.2/js/all.js'
+      }
+    ]
   },
   loading: { color: '#22274d', height: '3px' },
   pageTransition: 'fade',
   plugins: [],
-  modules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/google-analytics', '@nuxtjs/style-resources'],
   googleAnalytics: {
     id: 'UA-114457301-1'
   },
