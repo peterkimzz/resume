@@ -1,18 +1,23 @@
 {
-  "name": "nuxtjs",
+  "name": "peterkimzz-resume",
   "version": "1.0.0",
-  "description": "My astonishing Nuxt.js project",
-  "author": "msweeneydev",
-  "private": true,
+  "description": "Resume for Peter Donghyun Kim",
+  "author": "Peter Donghyun Kim",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt generate",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "deploy": "now"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "@nuxtjs/google-analytics": "^2.2.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "nuxt": "^2.0.0",
+    "open-color": "^1.7.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.4",
+    "sass-loader": "^8.0.0"
   }
 }

@@ -1,13 +1,21 @@
 export default {
   mode: 'spa',
-  /*
-   ** Headers of the page
-   */
+  server: {
+    port: 3001
+  },
   head: {
-    title: process.env.npm_package_name || '',
+    title: '김동현 개발자 이력서 :: peterkimzz',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        'http-equiv': 'X-UA-Compatible',
+        content: 'IE=edge,chrome=1'
+      },
+      {
+        name: 'viewport',
+        content:
+          'width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'
+      },
       {
         hid: 'description',
         name: 'description',
@@ -16,32 +24,23 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-  /*
-   ** Customize the progress-bar color
-   */
-  loading: { color: '#fff' },
-  /*
-   ** Global CSS
-   */
-  css: [],
-  /*
-   ** Plugins to load before mounting the App
-   */
+  loading: { color: '#22274d', height: '3px' },
+  pageTransition: 'fade',
   plugins: [],
-  /*
-   ** Nuxt.js modules
-   */
-  modules: [],
-  /*
-   ** Build configuration
-   */
+  modules: ['@nuxtjs/style-resources'],
+  googleAnalytics: {
+    id: 'UA-114457301-1'
+  },
+  styleResources: {
+    scss: [
+      'node_modules/open-color/open-color.scss',
+      './assets/scss/index.scss'
+    ]
+  },
   build: {
-    /*
-     ** You can extend webpack config here
-     */
     extend(config, ctx) {}
   },
   generate: {
     dir: 'public'
   }
-};
+}
