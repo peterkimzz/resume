@@ -32,6 +32,9 @@
         title="소셜 네트워크"
         class="sns-container">
         <a
+          href="https://github.com/peterkimzz"
+          target="_blank"><i class="fab fa-github"></i></a>
+        <a
           href="https://facebook.com/peterkimzz"
           target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a
@@ -61,11 +64,17 @@ export default {
 <style lang="scss" scoped>
 .sns-container {
   a {
+    color: #333;
     display: inline-block;
     margin-bottom: 0;
     margin-top: 0;
     margin-left: 0;
     margin-right: 8px;
+    transition: 0.2s;
+
+    &:hover {
+      color: $--color-primary;
+    }
   }
 }
 </style>

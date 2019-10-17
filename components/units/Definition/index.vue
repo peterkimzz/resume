@@ -1,16 +1,32 @@
 <template>
-  <dl>
+  <dl
+    :style="[
+      { 'align-items': alignItems }
+    ]">
     <dt>
       <div class="sub-title">{{ subTitle }}</div>
       <div class="title">{{ title }}</div>
     </dt>
-    <dd><slot/></dd>
+    <dd v-if="$slots.default">
+      <slot/>
+    </dd>
+    <dd v-if="items.length">
+      <ul>
+        <li 
+          v-for="(item, index) in items"
+          :key="item + index">{{ item }}</li>
+      </ul>
+    </dd>
   </dl>
 </template>
 
 <script>
 export default {
   props: {
+    align: {
+      type: String,
+      default: ''
+    },
     subTitle: {
       type: String,
       default: ''
@@ -18,6 +34,17 @@ export default {
     title: {
       type: String,
       default: ''
+    },
+    items: {
+      type: Array,
+      default: () => []
+    }
+  },
+  computed: {
+    alignItems() {
+      if (this.align) return this.align
+
+      return this.items.length ? 'flex-start' : 'flex-end'
     }
   }
 }
@@ -62,11 +89,25 @@ dd {
 .title {
   margin: 0;
   font-size: 15px;
-  color: $oc-gray-8;
+  color: $oc-gray-7;
+  font-weight: bold;
 
   @media (min-width: 1128px) {
     font-size: 18px;
   }
-  font-weight: bold;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 15px;
+  margin-bottom: 6px;
+  list-style: circle;
+  @media (min-width: 1128px) {
+    font-size: 18px;
+  }
 }
 </style>
