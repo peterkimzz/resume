@@ -9,7 +9,7 @@
       <vue-definition
         sub-title="name"
         title="이름"
-        font-size="small">김동현 (Peter Donghyun Kim)</vue-definition>
+        font-size="small">김동현 (Donghyun Peter Kim)</vue-definition>
       <vue-definition
         sub-title="Birthday"
         title="생년월일">1993년 2월 25일</vue-definition>
