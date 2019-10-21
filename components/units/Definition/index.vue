@@ -2,7 +2,7 @@
   <dl
     :class="[
       { [display]: display },
-      { [alignItems]: alignItems }
+      { [alignItems]: alignItems },
     ]">
     <dt>
       <vue-image-viewer
@@ -10,35 +10,61 @@
         :src="src"
         style="width: 60px; height: 60px; margin-bottom: 10px;"/>
       <div class="sub-title">{{ subTitle }}</div>
-      <div class="title">{{ title }}</div>
+      <component
+        :is="href ? 'a' : 'h3'"
+        :class="[{ link: href }]"
+        :href="href"
+        target="_blank"
+        class="title">
+        {{ title }}
+        <i 
+          v-if="verified" 
+          class="fas fa-check-circle verified__icon"></i>
+      </component>
     </dt>
-    <dd 
-      v-if="$slots.default">
-      <slot/>
-    </dd>
-    <dd v-if="items.length">
-      <ul>
-        <li 
-          v-for="(item, index) in items"
-          :key="item + index">
-          <span style="margin-right: 3px;">•</span>
-          <span>{{ item }}</span>
-        </li>
-      </ul>
-    </dd>
+    <div>
+      <dd 
+        v-if="$slots.default">
+        <slot/>
+      </dd>
+      <dd v-if="items.length">
+        <ul>
+          <li 
+            v-for="(item, index) in items"
+            :key="item + index">
+            <span style="margin-right: 3px;">•</span>
+            <span>{{ item }}</span>
+          </li>
+        </ul>
+      </dd>
+      <div 
+        v-if="tags.length"
+        class="bottom-container">
+        <vue-tags 
+          :data="tags"/>
+      </div>
+    </div>
   </dl>
 </template>
 
 <script>
 import VueImageViewer from '~/components/units/ImageViewer'
+import VueDivider from '~/components/units/Divider'
+import VueTags from '~/components/units/Tags'
 export default {
   components: {
-    VueImageViewer
+    VueImageViewer,
+    VueDivider,
+    VueTags
   },
   props: {
     flex: {
       type: Boolean,
       default: true
+    },
+    verified: {
+      type: Boolean,
+      default: false
     },
     block: {
       type: Boolean,
@@ -65,6 +91,10 @@ export default {
       default: ''
     },
     items: {
+      type: Array,
+      default: () => []
+    },
+    tags: {
       type: Array,
       default: () => []
     }
@@ -136,15 +166,32 @@ dd {
   text-transform: uppercase;
 }
 
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .title {
-  margin-top: -5px;
+  display: flex;
+  align-items: center;
+  margin: 0;
   font-size: 15px;
   color: $oc-gray-7;
   font-weight: bold;
+  line-height: 1.3;
+
+  &.link {
+  }
 
   @media (min-width: 1128px) {
     font-size: 18px;
   }
+}
+
+.verified__icon {
+  font-size: 12px;
+  margin-left: 7px;
+  color: $oc-blue-5;
 }
 
 ul {
@@ -160,5 +207,9 @@ li {
   @media (min-width: 1128px) {
     font-size: 18px;
   }
+}
+
+.bottom-container {
+  margin-top: 6px;
 }
 </style>

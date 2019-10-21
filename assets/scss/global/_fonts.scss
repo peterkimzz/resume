@@ -21,8 +21,10 @@ body {
 a {
   color: $--color-primary;
   text-decoration: none;
+  transition: 0.2s;
 
   &:hover {
+    color: $--color-primary;
     text-decoration: underline;
   }
 }

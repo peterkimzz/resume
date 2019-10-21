@@ -22,13 +22,14 @@ export default {
 
 <style lang="scss" scoped>
 .tags {
-  margin-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tag {
   font-size: 13px;
-  margin-right: 6px;
-  padding: 3px 7px;
+  margin: 4px;
+  padding: 1px 7px;
   border-radius: 4px;
   background-color: $oc-gray-6;
   color: $oc-gray-2;
