@@ -41,14 +41,11 @@ export default {
       backend: ['Node.js'],
       database: ['MySQL'],
       etc: [
-        'AWS (EC2, RDS, S3, Route53, Load Balancer, CodeCommit)',
-        'SSR',
+        'AWS (EC2, RDS, S3, Route53)',
         'SEO',
         'Nginx',
         'ElasticSearch',
         'Swift',
-        'Objective-C',
-        'React Native',
         'Firebase'
       ]
     }

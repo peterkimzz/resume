@@ -3,7 +3,7 @@
     sub-title="Projects"
     title="프로젝트">
     <div>
-      <vue-definition
+      <!-- <vue-definition
         :tags="creaction"
         block
         sub-title="2019년 8월 - 10월"
@@ -47,14 +47,16 @@
         <div>
           "MCN 전문 소프트웨어 개발사"
         </div>
-      </vue-definition>
+      </vue-definition> -->
       <vue-definition
         block
         sub-title="2019년 6월 - 7월"
         title="SoluM ESL Dashboard"
         src="/imgs/solum_logo.jpg">
         <div>
-          (주)솔루엠의 하청 업체인 (주)디카모의 외주 프로젝트의 일원으로 참여했던 프로젝트입니다. 당시 API 서버는 개발이 완료되어있던 상황이었고, 편의점 혹은 마트 등에서 사용하는 종이로 된 상품 가격표를 전자 태그로 대체해서 웹사이트 Admin 페이지로 디스플레이를 조절하는 일종의 대시보드 페이지를 개발했습니다. SEO가 필요없는 애플리케이션이므로 정적 페이지인 Vue.js로 개발해서 서버 비용 부담을 줄였습니다.
+          (주)솔루엠의 하청 업체인 (주)디카모의 외주 프로젝트의 일원으로 참여했던 프로젝트입니다.<br><br>
+          당시 API 서버는 개발이 완료되어있던 상황이었고, 편의점 혹은 마트 등에서 사용하는 종이로 된 상품 가격표를 전자 태그로 대체해서 웹사이트 Admin 페이지로 디스플레이를 조절하는 일종의 대시보드 페이지를 개발했습니다.<br><br>
+          SEO가 필요없는 애플리케이션이므로 정적 페이지인 Vue.js로 개발해서 서버 비용 부담을 줄였습니다. (내부 보안 정책에 의해 프로젝트에 도메인 주소는 연결시키지 않았습니다.)
         </div>
         <vue-tags :data="dicamo"/>
       </vue-definition>
@@ -97,7 +99,7 @@
         <div>
           "Weekly Photo Contest"<br><br>
           이벤트성 애플리케이션이며 메인 컨셉은 매주 토요일 24시간 동안만 1인당 1개의 사진을 업로드할 수 있고, 이후 일요일부터 금요일까지 회원들이 투표해서 최다 득표를 한 1, 2, 3등에게 현금 보상을 해주는 서비스입니다.<br><br>
-          이 프로젝트에서는 Swift3를 사용해 App Store에만 배포했습니다. 총 3번 상금을 지급했었고 BM이 약해 중단된 프로젝트입니다.
+          이 프로젝트에서는 Swift를 사용해 App Store에만 배포했습니다. 총 3번 상금을 지급했었고 BM이 다소 약해 중단된 프로젝트입니다.
         </div>
       </vue-definition>
       <vue-definition

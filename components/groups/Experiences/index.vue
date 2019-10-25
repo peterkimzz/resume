@@ -11,7 +11,7 @@
       </vue-definition>
       <vue-definition
         block
-        sub-title="2018년 3월 - 2019년 3월"
+        sub-title="2018년 8월 - 2019년 3월"
         title="(주)강남엄마 / PM">
         입사 했을 당시 기존 개발자들이 모두 나간 상태였고, Ruby on Rails로 되어있던 프로젝트를 당시 가장 핫한 프레임워크인 Vue.js로 테크 스택을 변경할 것을 제안드렸고 혼자 웹사이트와 API서버를 첫 한 달 동안 개발해서 성공적으로 리뉴얼을 마쳤습니다.<br><br>
         이후 총 3명의 개발자를 직접 채용했고 점점 커지는 프로젝트를 관리해야 했기 때문에 자연스럽게 PM 역할을 맡았습니다.<br><br>
@@ -20,7 +20,7 @@
       </vue-definition>
       <vue-definition
         block
-        sub-title="2017년 2월 - 2018년 6월"
+        sub-title="2017년 2월 - 2018년 7월"
         title="Zerobase Software Inc. / 공동 창업, CTO">
         약 1년 반동안 총 3개의 프로젝트인 "Hoopee", "Picon" 그리고 "Factoryhunt"를 진행했습니다. <br><br>이 때 "Hoopee"를 메인 프로젝트로 미국 엑셀러레이터인 "Y Combinator Startup School" 1기에 합격해 10주 동안 성공적으로 교육을 수료했습니다.<br><br>총 2번의 Y Combinator 메인 배치에 지원했고, 서류 합격 후 온라인 인터뷰에서 아쉽게 탈락했고 프로그램과는 별개로 프로젝트의 수익성이 오랫동안 이루어지지않아 지분을 모두 정리 후 퇴사하게 되었습니다.
       </vue-definition>
