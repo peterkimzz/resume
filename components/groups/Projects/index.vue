@@ -3,51 +3,19 @@
     sub-title="Projects"
     title="프로젝트">
     <div>
-      <!-- <vue-definition
-        :tags="creaction"
-        block
-        sub-title="2019년 8월 - 10월"
-        title="크리액션"
-        href="http://creaction.kr"
-        src="/imgs/creaction_logo.png">
-        <div>
-          누적 수강생 약 4만명에 달하는 7년 역사를 지닌 전통있는 크리에이터 아카데미 입니다.
-        </div>
-      </vue-definition>
       <vue-definition
-        :tags="goteamjang"
         block
-        sub-title="2019년 8월"
-        title="고팀장"
-        href="http://goteamjang.com"
-        src="/imgs/goteamjang_logo.png">
+        sub-title="2019년 11월 - 현재"
+        title="Empo"
+        href="http://empoapp.com"
+        src="/imgs/empo.ico">
         <div>
-          종합 광고 마케팅 전문가를 슬로건으로 사용하는 광고 대행사입니다.<br>
-          이 프로젝트는 제가 직접 브랜드 네임을 직접 제안한 프로젝트입니다. 클라이언트께서 기획 디자인 개발 모두를 의뢰했고 한 페이지 짜리로 간단하게 진행했습니다. 해당 웹사이트 제작은 디자인 및 개발을 100% 참여했습니다.
+          엠포는 모바일 데이터 직거래 플랫폼입니다.<br><br>
+          전 세계의 심각한 대역폭 공급 불균형을 해소하기 위해 글로벌 시장을 타겟으로 서비스 중입니다. 현재는 인도가 메인 타겟이고, 안드로이드 OS만 서비스 중입니다.<br><br>
+          기존 PHP 언어로 개발되어있던 서버 코드를 Node.js로 변경하면서 데이터베이스 정규화 작업 및 마이그레이션을 진행하고 있습니다. 또한 서버 보안을 위한 AWS 인프라를 조금 더 탄탄히 구성했습니다.
         </div>
+        <vue-tags :data="empo"/>
       </vue-definition>
-      <vue-definition
-        :tags="contactyoutuber"
-        block
-        sub-title="2019년 8월"
-        title="컨택트유튜버"
-        href="http://contactyoutuber.com"
-        src="/imgs/contactyoutuber_logo.png">
-        <div>
-          "유튜브 마케팅의 새로운 경지"
-        </div>
-      </vue-definition>
-      <vue-definition
-        :tags="luckyscanner"
-        block
-        sub-title="2019년 7월"
-        title="럭키스캐너"
-        href="http://luckyscanner.com"
-        src="/imgs/luckyscanner_logo.png">
-        <div>
-          "MCN 전문 소프트웨어 개발사"
-        </div>
-      </vue-definition> -->
       <vue-definition
         block
         sub-title="2019년 6월 - 7월"
@@ -135,34 +103,31 @@
 </template>
 
 <script>
-// containers
-import VueTitleContainer from '~/containers/Title'
-// units
-import VueDefinition from '~/components/units/Definition'
-import VueTags from '~/components/units/Tags'
-export default {
-  components: {
-    VueTitleContainer,
-    VueDefinition,
-    VueTags
-  },
-  data() {
-    return {
-      inactive: {
-        aManLikeFox: ['iOS', 'Objective-C']
-      },
-      zerobase: {
-        hoopee: ['iOS', 'Android', 'React Native', 'Firebase'],
-        picon: ['iOS', 'Swift', 'Firebase'],
-        factoryhunt: ['Vue.js', 'Node.js', 'MariaDB', 'AWS', 'ElasticSearch']
-      },
-      gangmom: ['Vue.js', 'Node.js', 'MySQL', 'AWS'],
-      dicamo: ['Vue.js'],
-      luckyscanner: ['Vue.js', 'AWS S3'],
-      contactyoutuber: ['Vue.js', 'AWS S3'],
-      goteamjang: ['Vue.js', 'AWS S3'],
-      creaction: ['Vue.js', 'Node.js', 'MySQL', 'AWS']
-    }
-  }
-}
+	// containers
+	import VueTitleContainer from '~/containers/Title'
+	// units
+	import VueDefinition from '~/components/units/Definition'
+	import VueTags from '~/components/units/Tags'
+	export default {
+		components: {
+			VueTitleContainer,
+			VueDefinition,
+			VueTags
+		},
+		data() {
+			return {
+				inactive: {
+					aManLikeFox: ['iOS', 'Objective-C']
+				},
+				zerobase: {
+					hoopee: ['iOS', 'Android', 'React Native', 'Firebase'],
+					picon: ['iOS', 'Swift', 'Firebase'],
+					factoryhunt: ['Vue.js', 'Node.js', 'MariaDB', 'AWS', 'ElasticSearch']
+				},
+				gangmom: ['Vue.js', 'Node.js', 'MySQL', 'AWS'],
+				dicamo: ['Vue.js'],
+				empo: ['Node.js', 'MySQL', 'AWS', 'Firebase']
+			}
+		}
+	}
 </script>

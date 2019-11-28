@@ -16,12 +16,12 @@
         href="https://taling.me/Talent/Detail/17455">
         코딩, 프로그래밍 기술에 대한 소규모 오프라인 강의를 진행 중입니다.
       </vue-definition>
-      <vue-definition
+      <!-- <vue-definition
         block
         sub-title="class101"
         title="클래스101">
         코딩, 프로그래밍 기술에 대한 온라인 강의를 준비 중입니다.
-      </vue-definition>
+      </vue-definition> -->
     </div>
   </vue-title-container>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div id="default__layout">
     <main>
-      <nuxt />
+      <nuxt/>
     </main>
     <vue-container>
       <vue-footer/>
